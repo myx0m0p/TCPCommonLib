@@ -1,6 +1,6 @@
 {
   "name": "@myx0m0p/tcp-common-lib",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Methods, interfaces, classes which are used both by TCP frontend and backend application",
   "main": "index.js",
   "scripts": {
