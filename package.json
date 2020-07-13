@@ -1,0 +1,53 @@
+{
+  "name": "tcp-common-lib",
+  "version": "1.0.0",
+  "description": "Methods, interfaces, classes which are used both by TCP frontend and backend application",
+  "main": "index.js",
+  "scripts": {
+    "clean": "shx rm -rf dist/*",
+    "build": "npm-run-all clean check-by-eslint compile-ts",
+    "check-by-eslint": "eslint **/*.ts --fix",
+    "compile-ts": "tsc",
+    "compile-ts-watch": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=12.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myx0m0p/TCPCommonLib.git"
+  },
+  "keywords": [
+    "TCP",
+    "Telos",
+    "EOSIO"
+  ],
+  "homepage": "https://github.com/myx0m0p/TCPCommonLib/blob/master/README.md",
+  "author": "Andrew U <tmyx0m0p@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "os-locale": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/hapi__joi": "^17.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^22.21.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-unicorn": "^12.1.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0",
+    "npm-run-all": "^4.1.5",
+    "shx": "^0.3.2",
+    "tsutils": "^3.17.1",
+    "typescript": "^3.9.6"
+  }
+}
