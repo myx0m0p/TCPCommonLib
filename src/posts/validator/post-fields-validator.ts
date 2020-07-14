@@ -6,10 +6,10 @@ const commonInputFieldsSchema = {
   blockchain_id: Joi.string().required(),
 
   title: Joi.string().required(),
-  leading_text: Joi.string().required().allow([null, '']),
+  leading_text: Joi.string().required().allow(...[null, '']),
   description: Joi.string().required(),
 
-  entity_name_for: Joi.string().required().valid([USERS, ORGANIZATIONS]),
+  entity_name_for: Joi.string().required().valid(...[USERS, ORGANIZATIONS]),
 
   entity_images: Joi.object().required(),
   entity_tags: Joi.array().required().items(Joi.string().min(1)),
