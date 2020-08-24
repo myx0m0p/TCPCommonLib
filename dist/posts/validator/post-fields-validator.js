@@ -1,13 +1,13 @@
 "use strict";
-const Joi = require("@hapi/joi");
+const Joi = require("joi");
 const common_regex_1 = require("../../common/validator/common-regex");
 const entity_names_1 = require("../../common/dictionary/entity-names");
 const commonInputFieldsSchema = {
     blockchain_id: Joi.string().required(),
     title: Joi.string().required(),
-    leading_text: Joi.string().required().allow([null, '']),
+    leading_text: Joi.string().required().allow(...[null, '']),
     description: Joi.string().required(),
-    entity_name_for: Joi.string().required().valid([entity_names_1.USERS, entity_names_1.ORGANIZATIONS]),
+    entity_name_for: Joi.string().required().valid(...[entity_names_1.USERS, entity_names_1.ORGANIZATIONS]),
     entity_images: Joi.object().required(),
     entity_tags: Joi.array().required().items(Joi.string().min(1)),
     created_at: Joi.string().required().regex(common_regex_1.DATETIME_STRING_UTC_REGEX),
