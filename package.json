@@ -1,6 +1,6 @@
 {
   "name": "@myx0m0p/tcp-common-lib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Methods, interfaces, classes which are used both by TCP frontend and backend application",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "author": "Andrew U <tmyx0m0p@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "joi": "^17.2.1",
+    "@hapi/joi": "^15.1.1",
     "os-locale": "^4.0.0"
   },
   "devDependencies": {

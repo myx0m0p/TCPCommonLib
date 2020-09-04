@@ -1,4 +1,4 @@
-import Joi = require('joi');
+import Joi = require('@hapi/joi');
 import { DATETIME_STRING_UTC_REGEX } from '../../common/validator/common-regex';
 import { ORGANIZATIONS, USERS } from '../../common/dictionary/entity-names';
 

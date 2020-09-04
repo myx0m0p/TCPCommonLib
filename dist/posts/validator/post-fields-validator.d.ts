@@ -1,6 +1,5 @@
-import Joi = require('joi');
 declare class PostFieldsValidator {
-    static validatePublicationFromEntity(objectToValidate: any, entityName: string): Joi.ValidationResult;
+    static validatePublicationFromEntity(objectToValidate: any, entityName: string): any;
     private static validatePublicationFromUser;
     private static validatePublicationFromOrganization;
 }

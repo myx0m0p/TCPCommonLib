@@ -1,5 +1,5 @@
 "use strict";
-const Joi = require("joi");
+const Joi = require("@hapi/joi");
 const common_regex_1 = require("../../common/validator/common-regex");
 const entity_names_1 = require("../../common/dictionary/entity-names");
 const commonInputFieldsSchema = {
